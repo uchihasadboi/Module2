@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <h1>Hello</h1>
-        <script src="test.js"></script>
-    </body>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>"FromSoftware"</h1>
+    </header>
+    <main>
+        <div class="cart-container">
+            <div class="cart-items">
+                <table id="shopping-cart">
+                    <thead>
+                        <tr>
+                            <th class="left">Game Title</th>
+                            <th class="right">Price</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="cart-summary">
+                <h2>Cart Summary</h2>
+                <table id="cart-totals">
+                    <thead>
+                        <tr>
+                            <th class="left">Total Items</th>
+                            <th class="right">Total Price</th>
+                        </tr>
+                    </thead>
+                </table>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
